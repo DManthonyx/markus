@@ -1,26 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { Route, Switch } from 'react-router-dom';
+import NavBar from './NavBar';
+import Home from './Home';
+import About from './About';
+import Skills from './Skills';
+import { routes } from './Const';
+import Portfolio from './Portfolio';
 
-function App() {
+const My404 = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      Your lost body
     </div>
-  );
-}
+  )
+};
 
+class App extends Component {
+  
+  render () {
+
+    return (
+      <main>
+        <NavBar routes={ routes } />
+      <Switch>
+        <Route exact path='/' render={() => <Home /> }  />
+        <Route exact path='/home' render={() => <Home /> }  />
+        <Route exact path='/about' render={() => <About />}  />
+        <Route exact path='/skills' render={() => <Skills />} />
+        <Route exact path='/portfolio' render={() => <Portfolio />} />
+        <Route component={ My404 } />
+      </Switch>
+    </main>
+    );
+  }
+}
 export default App;
+
+
