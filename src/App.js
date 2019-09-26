@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import NavBar from './NavBar';
 import Home from './Home';
 import About from './About';
@@ -8,9 +8,13 @@ import { routes } from './Const';
 import Portfolio from './Portfolio';
 
 const My404 = () => {
+ if(true) {
+   return  <Redirect to="/home" />
+ }
   return (
     <div>
       Your lost body
+      
     </div>
   )
 };
