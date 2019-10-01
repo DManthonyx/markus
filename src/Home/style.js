@@ -13,7 +13,7 @@ export const DivImg = styled.div`
 export const Img = styled.img`
   width: 65%;
   @media (max-width: 550px) {
-    width: 75%;
+    width: 100%;
   }
 `
 

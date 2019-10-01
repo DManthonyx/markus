@@ -26,6 +26,7 @@ export const Section = styled.section`
 //     display: block;
 //   }
 // `
+
 export const H2 = styled.h2`
 
 `
@@ -34,6 +35,9 @@ export const DivAbout = styled.div`
   width: 48%;
   @media (max-width: 800px) {
     width: 71%;
+  }
+  @media (max-width: 500px) {
+    width: 94%;
   }
 `
 

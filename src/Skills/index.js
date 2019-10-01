@@ -13,7 +13,7 @@ const Skills = () => {
       <Section>
         <Skill><Img src="https://i.imgur.com/e30ab8k.png" /></Skill>
         <Skill><Img src="https://i.imgur.com/pvriFr2.jpg" /></Skill>
-        <Skill><Img src="https://i.imgur.com/Ks9zbfc.png" /></Skill>
+        <Skill><Img src="https://i.imgur.com/RxBss0D.png" /></Skill>
         <Skill><Img src="https://i.imgur.com/usKsowm.png" /></Skill>
       </Section>
       <Section>

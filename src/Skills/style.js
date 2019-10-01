@@ -30,6 +30,9 @@ export const Skill = styled.div`
   width: 125px;
   height: 125px;
   padding: 22px;
+  @media (max-width: 500px) {
+    padding: 8px;
+  }
 `
 
 export const Img = styled.img`

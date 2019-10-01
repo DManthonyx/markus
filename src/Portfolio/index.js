@@ -38,6 +38,14 @@ const Portfolio = () => {
             <P>Technologies used: JavaScript, EJS, Node, Express, Mongoose</P>
           </TechBox>
         </Project>
+        <Project>
+          <Title>SlotMachine</Title>
+          <Img src="https://i.imgur.com/GaIvUx1.png"/>
+          <TechBox>
+            <P>A simple but fun and interactive slot machine game. Cost 2 dollars to play and having 3 different options to select from, which is 20 50 100. 20 being the easiest and 100 being the hardest. Can win by getting either all bars which is the jack pot and thats double the pay and all the same fruit or 2 of the same fruit and one bar is the only way to win.</P>
+            <P>Technologies used: JavaScript,HTML5, CSS3</P>
+          </TechBox>
+        </Project>
       </Section>
     </div>
   )
