@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import { Web } from 'styled-icons/material/Web'
+import { GithubSquare} from 'styled-icons/fa-brands/GithubSquare'
 
 export const Section = styled.section`
   display: flex;
@@ -47,4 +49,30 @@ export const P = styled.p`
   font-size: 1em;
   letter-spacing: 1px;
   line-height: 25px;
+`
+
+export const DivButton = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+`
+export const ContactLink = styled.a`
+
+`
+
+export const WebIcon = styled(Web)`
+  color: black;
+  width: 45px;
+  &:hover {
+    color: #f5c303;
+    transform: scale(1.3)
+  }
+`
+
+export const GithubIcon = styled(GithubSquare)`
+  color: black;
+  width: 35px;
+  &:hover {
+    color: #f5c303;
+    transform: scale(1.3)
+  }
 `
