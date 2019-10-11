@@ -2,7 +2,7 @@
   "name": "markus",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://DManthonyx.github.io/markus",
+  "homepage": "https://DManthonyx.github.io/home",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "react": "^16.9.0",
