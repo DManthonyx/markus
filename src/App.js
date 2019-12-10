@@ -11,12 +11,6 @@ const My404 = () => {
  if(true) {
    return  <Redirect to="/home" />
  }
-  return (
-    <div>
-      Your lost body
-      
-    </div>
-  )
 };
 
 class App extends Component {
