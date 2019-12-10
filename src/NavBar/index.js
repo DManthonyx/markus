@@ -21,8 +21,8 @@ const NavBar = ({ routes = [] }) => {
     <NavContainer color={"white"} display={""}>
       <NavRow>
           {
-            routes.map(route =>
-              <Link exact to={`/${route}`}>{route}</Link>
+            routes.map((route, i) =>
+              <Link exact to={`/${route}`} key={i}>{route}</Link>
             )
           }
           <Hamburger setIsOpen={setIsOpen} isOpen={isOpen}/>
@@ -30,8 +30,8 @@ const NavBar = ({ routes = [] }) => {
       <Overlay className={isOpen ? "show" : "hide"}>
         <Ul>
           {
-            routes.map(route =>
-              <Li onClick={() => setIsOpen(!isOpen)}>
+            routes.map((route, i) =>
+              <Li onClick={() => setIsOpen(!isOpen)} key={i}>
                 <HamLink exact to={`/${route}`}>{route}</HamLink>
               </Li>
             )
