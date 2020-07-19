@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { Web } from 'styled-icons/material/Web'
-import { GithubSquare} from 'styled-icons/fa-brands/GithubSquare'
+import { Web } from '@styled-icons/material/Web'
+import { GithubSquare} from '@styled-icons/fa-brands/GithubSquare'
 
 export const Section = styled.section`
   display: flex;

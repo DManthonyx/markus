@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom'
-import { Email } from 'styled-icons/material/Email'
-import { Linkedin } from 'styled-icons/icomoon/Linkedin'
-import { GithubSquare} from 'styled-icons/fa-brands/GithubSquare'
+import { Email } from '@styled-icons/material/Email'
+import { Linkedin } from '@styled-icons/icomoon/Linkedin'
+import { GithubSquare } from '@styled-icons/fa-brands/GithubSquare'
 
 export const Section = styled.section`
   margin-top: 50px;
@@ -27,9 +27,7 @@ export const Section = styled.section`
 //   }
 // `
 
-export const H2 = styled.h2`
-
-`
+export const H2 = styled.h2``
 
 export const DivAbout = styled.div`
   width: 48%;
