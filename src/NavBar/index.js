@@ -11,7 +11,7 @@ import {
   Overlay
  } from './style'
 
-const NavBar = ({ routes = [] }) => {
+const NavBar = ({routes = []}) => {
 
   const [ isOpen, setIsOpen ] = useState(false)
 
@@ -23,7 +23,7 @@ const NavBar = ({ routes = [] }) => {
           {
             routes.map((route, i) =>
               <Link exact to={`/${route}`} key={i}>{route}</Link>
-            )
+            ) 
           }
           <Hamburger setIsOpen={setIsOpen} isOpen={isOpen}/>
       </NavRow>

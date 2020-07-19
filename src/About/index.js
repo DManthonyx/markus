@@ -29,8 +29,8 @@ const About = () => {
           <H2>Contact Me</H2>
           <DivLink>
             {/* <ContactLink><EmailIcon></EmailIcon>Email</ContactLink> */}
-            <ContactLink href='https://www.linkedin.com/in/demarkus-matthews-a12051172/'><LinkedinIcon></LinkedinIcon></ContactLink>
-            <ContactLink href='https://github.com/DManthonyx?tab=repositories'><GithubIcon></GithubIcon></ContactLink>
+            <ContactLink target="_blank" href='https://www.linkedin.com/in/demarkus-matthews-a12051172/'><LinkedinIcon></LinkedinIcon></ContactLink>
+            <ContactLink target="_blank" href='https://github.com/DManthonyx?tab=repositories'><GithubIcon></GithubIcon></ContactLink>
           </DivLink>
         </DivContact>
       </DivAbout>
