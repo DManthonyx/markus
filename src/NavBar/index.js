@@ -20,12 +20,12 @@ const NavBar = ({routes = []}) => {
   return (
     <NavContainer color={"white"} display={""}>
       <NavRow>
-          {
-            routes.map((route, i) =>
-              <Link exact to={`/${route}`} key={i}>{route}</Link>
-            ) 
-          }
-          <Hamburger setIsOpen={setIsOpen} isOpen={isOpen}/>
+        {
+          routes.map((route, i) =>
+            <Link exact to={`/${route}`} key={i}>{route}</Link>
+          ) 
+        }
+        <Hamburger setIsOpen={setIsOpen} isOpen={isOpen}/>
       </NavRow>
       <Overlay className={isOpen ? "show" : "hide"}>
         <Ul>
