@@ -1,53 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Route, Switch, Redirect, withRouter } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-import styled from 'styled-components';
-import NavBar from './NavBar';
-import Home from './Home';
-import About from './About';
-import Skills from './Skills';
+import NavBar from './Components/NavBar';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Skills from './Pages/Skills';
 import { routes } from './Const';
-import Portfolio from './Portfolio';
+import Portfolio from './Pages/Portfolio';
+
+import { Wrapper } from './style';
 
 const My404 = () => {
  if(true) {
    return  <Redirect to="/home" />
  }
 };
-
-const Wrapper = styled.div`
-  .fade-enter {
-    opacity: 0.01;
-  }
-
-  .fade-enter.fade-enter-active {
-    opacity: 1;
-    transition: opacity 500ms ease-in;
-  }
-
-  .fade-exit {
-    opacity: 0;
-  }
-
-  .fade-exit.fade-exit-active {
-    /* opacity: 0.00;
-    transition: opacity 500ms ease-in; */
-  }
-
-  div.transition-group {
-    position: relative;
-  }
-
-  section.route-section {
-    position: absolute;
-    width: 100%;
-    top: 78px;
-    left: 0;
-    @media (max-width: 950px) {
-    top: 40px;
-  }
-  }
-`;
 
 function App({ location }) {
   return (
