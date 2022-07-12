@@ -14,19 +14,6 @@ export const Section = styled.section`
   }
 `
 
-// export const H1 = styled.h1`
-//   word-spacing: 4px;
-//   width: 100%;
-//   text-align: center;
-//   font-size: 4em;
-//   margin-bottom: 50px;
-//   margin-top: 16px;
-//   display: none;
-//   @media (max-width: 950px) {
-//     display: block;
-//   }
-// `
-
 export const H2 = styled.h2``
 
 export const DivAbout = styled.div`

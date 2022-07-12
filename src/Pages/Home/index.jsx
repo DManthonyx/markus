@@ -1,17 +1,14 @@
 import React from 'react';
 
 import { 
-  Link,
-  DivLink,
   DivImg,
   Img,
   MainTxt,
   H1Main,
   PMain,
   SecOne,
-  Button,
   Small
-  } from './style'
+} from './style'
 
 const Home = () => {
   return (
@@ -26,17 +23,6 @@ const Home = () => {
             <br /> 
             <Small>De'Markus Matthews</Small>
           </PMain>
-          {/* <DivLink>
-            <Button>
-              <Link exact to="/about">portfolio</Link>
-            </Button>
-            <Button>
-              <Link>skills</Link>
-            </Button>
-            <Button>
-              <Link exact to="/about">about</Link>
-            </Button>
-          </DivLink> */}
         </MainTxt>
       </SecOne>
     </div>

@@ -8,7 +8,10 @@ import Skills from './Pages/Skills';
 import { routes } from './Const';
 import Portfolio from './Pages/Portfolio';
 
-import { Wrapper } from './style';
+import { 
+  Wrapper,
+  Main
+} from './style';
 
 const My404 = () => {
  if(true) {
@@ -18,25 +21,25 @@ const My404 = () => {
 
 function App({ location }) {
   return (
-    <main>
+    <Main className='main'>
       <NavBar routes={ routes } />
-    <Wrapper>
-    <TransitionGroup className="transition-group">
-    <CSSTransition key={location.key} timeout={{ enter: 300, exit: 300 }} classNames="fade">
-    <section className="route-section">
-    <Switch>
-      <Route exact path='/' render={() => <Home /> }  />
-      <Route exact path='/home' render={() => <Home /> }  />
-      <Route exact path='/about' render={() => <About />}  />
-      <Route exact path='/skills' render={() => <Skills />} />
-      <Route exact path='/portfolio' render={() => <Portfolio />} />
-      <Route component={ My404 } />
-    </Switch>
-    </section>
-    </CSSTransition>
-    </TransitionGroup>
-    </Wrapper>
-  </main>
+      <Wrapper className='wrapper'>
+      <TransitionGroup className="transition-group">
+      <CSSTransition key={location.key} timeout={{ enter: 300, exit: 300 }} classNames="fade">
+      <section className="route-section">
+        <Switch>
+          <Route exact path='/' render={() => <Home /> }  />
+          <Route exact path='/home' render={() => <Home /> }  />
+          <Route exact path='/about' render={() => <About />}  />
+          <Route exact path='/skills' render={() => <Skills />} />
+          <Route exact path='/portfolio' render={() => <Portfolio />} />
+          <Route component={ My404 } />
+        </Switch>
+      </section>
+      </CSSTransition>
+      </TransitionGroup>
+      </Wrapper>
+    </Main>
   );
 }
 export default withRouter(App);

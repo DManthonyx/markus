@@ -3,14 +3,8 @@ import { NavLink } from 'react-router-dom'
 
 export const NavContainer = styled.div`
   background-color: ${props => props.color ? props.color : "black"};
-  position: absolute;
-  z-index: 100;
   width: 100%;
 `
-
-// export const NavRowContainer = styled.div`
-//   width: 100%;
-// `
 
 export const NavRow = styled.div`
   padding: 10px 0;

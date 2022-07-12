@@ -24,10 +24,6 @@ export const MainTxt = styled.div`
   }
 `
 
-export const DivLink = styled.div`
-  
-`
-
 export const H1Main = styled.h1`
   font-size: 4em;
   margin: 0px;
@@ -50,9 +46,9 @@ export const PMain = styled.p`
 `
 
 export const SecOne = styled.section`
-display: flex;
-justify-content: center;
-margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
 `
 
 export const Link = styled(NavLink)`
@@ -63,21 +59,6 @@ export const Link = styled(NavLink)`
   color: black;
   &:nth-child(1) {
    
-  }
-`
-export const Button = styled.button`
-  width: 17%;
-  margin: 4px;
-  border-radius: 5px;
-  font-weight: bold;
-  &:nth-child(1) {
-   margin-left: 3px;
-  }
-  &:hover {
-    background: rgba(245, 195, 3, 1);
-    border: rgba(245, 195, 3, 1);
-    transform: scale(1.1);
-    position: relative;
   }
 `
 
