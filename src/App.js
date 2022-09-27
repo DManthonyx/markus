@@ -20,7 +20,7 @@ const My404 = () => {
 };
 
 function App({ location }) {
-  return (
+  return ( 
     <Main className='main'>
       <NavBar routes={ routes } />
       <Wrapper className='wrapper'>
