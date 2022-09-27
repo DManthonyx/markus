@@ -1,0 +1,27 @@
+[debug] [2022-09-10T21:52:33.737Z] ----------------------------------------------------------------------
+[debug] [2022-09-10T21:52:33.738Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2022-09-10T21:52:33.739Z] CLI Version:   10.7.2
+[debug] [2022-09-10T21:52:33.739Z] Platform:      darwin
+[debug] [2022-09-10T21:52:33.739Z] Node Version:  v17.3.0
+[debug] [2022-09-10T21:52:33.740Z] Time:          Sat Sep 10 2022 14:52:33 GMT-0700 (Pacific Daylight Time)
+[debug] [2022-09-10T21:52:33.741Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-10T21:52:33.799Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-10T21:52:33.800Z] > authorizing via signed-in user (dmanthonycoding@gmail.com)
+[debug] [2022-09-10T21:52:33.800Z] [iam] checking project personnel-121f0 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-09-10T21:52:33.802Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/personnel-121f0:testIamPermissions [none]
+[debug] [2022-09-10T21:52:33.802Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/personnel-121f0:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-09-10T21:52:34.172Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/personnel-121f0:testIamPermissions 200
+[debug] [2022-09-10T21:52:34.172Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/personnel-121f0:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-09-10T21:52:34.174Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/personnel-121f0 [none]
+[debug] [2022-09-10T21:52:34.366Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/personnel-121f0 200
+[debug] [2022-09-10T21:52:34.366Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/personnel-121f0 {"projectId":"personnel-121f0","projectNumber":"382734368334","displayName":"Personal","name":"projects/personnel-121f0","resources":{"hostingSite":"personnel-121f0","realtimeDatabaseInstance":"personnel-121f0","storageBucket":"personnel-121f0.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_5bb31a0a-8d09-4918-9f04-af8204aa0114"}
+[info] 
+[info] === Deploying to 'personnel-121f0'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-09-10T21:52:34.370Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/personnel-121f0 [none]
+[debug] [2022-09-10T21:52:34.677Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/personnel-121f0 200
+[debug] [2022-09-10T21:52:34.678Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/personnel-121f0 {"projectId":"personnel-121f0","projectNumber":"382734368334","displayName":"Personal","name":"projects/personnel-121f0","resources":{"hostingSite":"personnel-121f0","realtimeDatabaseInstance":"personnel-121f0","storageBucket":"personnel-121f0.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_5bb31a0a-8d09-4918-9f04-af8204aa0114"}
+[debug] [2022-09-10T21:52:34.680Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/382734368334/sites/personnel-121f0/versions [none]
+[debug] [2022-09-10T21:52:34.680Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/382734368334/sites/personnel-121f0/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
